@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freshly squeezed organic juices made daily. Boost your health with our detox, energy, and immunity blends.">
+    <title>FreshSqueeze | Organic Juice Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo" aria-label="FreshSqueeze Home">
+                    <!-- <span class="logo-icon">🍊</span> -->
+                    <img src="assets/logo.png" class="logo-icon" alt="">
+                    <span class="logo-text">Fruit <span class="logo-text2">Fusion</span></span>
+                </a>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#order" class="nav-link order-btn">Order Online</a></li>
+                     <!-- <li><a href=""><button class="order-btn">Order Online</button></a></li> -->
+                </ul>
+                
+                <button class="burger" id="burger" aria-label="Mobile menu" aria-expanded="false">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Fresh & Healthy <span>Organic Juices</span></h1>
+                <p class="hero-subtitle">Cold-pressed perfection for your wellness journey</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#order" class="btn btn-secondary">Order Now</a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Featured Juices -->
+        <section class="featured">
+            <div class="container">
+                <h2 class="section-title">Our Signature Blends</h2>
+                <div class="featured-grid">
+                    <div class="juice-card">
+                        <div class="juice-img" style="background-image: url('assets/detox.png');"></div>
+                        <h3>Detox Delight</h3>
+                        <p>Kale, cucumber, lemon, ginger, apple</p>
+                        <span class="price">₹50</span>
+                    </div>
+                    <div class="juice-card">
+                        <div class="juice-img" style="background-image: url('assets/energy.jpg');"></div>
+                        <h3>Energy Boost</h3>
+                        <p>Orange, carrot, turmeric, pineapple</p>
+                        <span class="price">₹40</span>
+                    </div>
+                    <div class="juice-card">
+                        <div class="juice-img" style="background-image: url('assets/immunity.png');"></div>
+                        <h3>Immunity Shot</h3>
+                        <p>Grapefruit, lemon, ginger, cayenne</p>
+                        <span class="price">₹70</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2 class="section-title">Our Menu</h2>
+                <div class="menu-tabs">
+                    <button class="tab-btn active" data-category="all">All</button>
+                    <button class="tab-btn" data-category="detox">Detox</button>
+                    <button class="tab-btn" data-category="energy">Energy</button>
+                    <button class="tab-btn" data-category="immunity">Immunity</button>
+                    <button class="tab-btn" data-category="seasonal">Seasonal</button>
+                </div>
+                
+                <div class="menu-grid">
+                    <!-- Menu items will be loaded dynamically via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="about-text">Founded in 2015, FreshSqueeze began with a simple mission: to provide our community with the freshest, most nutritious juices possible. We source organic produce from local farms and cold-press our juices to preserve maximum nutrients.</p>
+                    <p class="about-text">Our team of wellness experts carefully crafts each recipe to deliver both incredible flavor and health benefits. No additives, no preservatives - just pure, natural goodness.</p>
+                    <div class="health-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-leaf"></i>
+                            <p>100% Organic Ingredients</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Made Fresh Daily</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-heart"></i>
+                            <p>Packed with Nutrients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <img src="assets/about.jpg" alt="Our team preparing fresh juices" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Juice Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/green.png" alt="Green detox juice with fruits" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/energy.jpg" alt="Colorful juice bottles on display" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/immunity.png" alt="Fresh oranges being juiced" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/refreshing.jpg" alt="Juice bar counter with ingredients" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/detox.png" alt="Close-up of tropical juice" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/trophical.jpg" alt="Juice flight tasting" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <p>"The Energy Boost juice is my morning ritual! I've noticed a significant difference in my energy levels since I started drinking it daily."</p>
+                            <div class="testimonial-author">
+                                <img src="assets/review1.jpg" alt="Sarah J." loading="lazy">
+                                <span>Sarah J.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"As a nutritionist, I'm very picky about juice quality. FreshSqueeze exceeds my expectations with their organic ingredients and cold-press process."</p>
+                            <div class="testimonial-author">
+                                <img src="assets/review2.jpg" alt="Dr. Michael T." loading="lazy">
+                                <span>Dr. Michael T.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"The Detox Delight helped me reset after the holidays. I love that I can taste each ingredient - you can tell it's made with care."</p>
+                            <div class="testimonial-author">
+                                <img src="assets/review3.jpg" alt="Amanda L." loading="lazy">
+                                <span>Amanda L.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev" aria-label="Previous testimonial">&#10094;</button>
+                    <div class="slider-dots"></div>
+                    <button class="slider-btn next" aria-label="Next testimonial">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Section -->
+        <section id="order" class="order-section">
+            <div class="container">
+                <div class="order-content">
+                    <h2 class="section-title">Ready to Order?</h2>
+                    <p>Get fresh juices delivered to your door or ready for pickup at our shop.</p>
+                    <div class="order-options">
+                        <a href="#" class="delivery-option">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>Delivery Partners</span>
+                        </a>
+                        <a href="#" class="delivery-option">
+                            <i class="fas fa-store"></i>
+                            <span>Pickup In-Store</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="order-form">
+                    <h3>Quick Order Form</h3>
+                    <form id="quick-order">
+                        <div class="form-group">
+                            <label for="juice-select">Select Juice</label>
+                            <select id="juice-select" required>
+                                <option value="">Choose your juice</option>
+                                <!-- Options will be populated via JS -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" id="quantity" min="1" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" required maxlength="10">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Visit Us</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 Green Street<br>Salem, 636005</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <p>(+91) 9876543210</p></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>hello@FruitFusion.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Mon-Fri: 7am-7pm<br>Sat-Sun: 8am-5pm</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name">Name</label>
+                                <input type="text" id="contact-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Message</label>
+                                <textarea id="contact-message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256064208!2d-73.98784468459382!3d40.748440179327925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTIuNyJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Our location on Google Maps"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Fruit Fusion</h3>
+                    <p>Providing fresh, organic juices to boost your health and energy since 2015.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#order">Order Online</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>123 Green Street<br>Salem, 636005</p>
+                    <p>hello@FruitFusion.com</p>
+                    <p>(+91) 9876543210</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Fruit Fusion. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
